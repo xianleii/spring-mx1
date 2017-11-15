@@ -8,6 +8,21 @@
     <welcome-file-list>    
         <welcome-file>/index.jsp</welcome-file>    
     </welcome-file-list>    
+    	<!-- 激活Tomcat的defaultServlet来处理静态文件 -->
+	<servlet-mapping>
+		<servlet-name>default</servlet-name>
+		<url-pattern>/assets/*</url-pattern>
+		<url-pattern>/images/*</url-pattern>
+		<url-pattern>/res/*</url-pattern>
+		<url-pattern>/css/*</url-pattern>
+		<url-pattern>/js/*</url-pattern>
+		<url-pattern>*.jpg</url-pattern>
+		<url-pattern>*.png</url-pattern>
+		<url-pattern>*.gif</url-pattern>
+		<url-pattern>*.js</url-pattern>
+		<url-pattern>*.css</url-pattern>
+		<url-pattern>*.ico</url-pattern>
+	</servlet-mapping>
         
     <!-- 加载spring bean -->    
     <context-param>    
@@ -32,6 +47,15 @@
         <filter-name>encodingFilter</filter-name>    
         <url-pattern>/*</url-pattern>    
     </filter-mapping>    
+      <!--请求过滤器获取项目路径-->
+	  <filter>
+	    <filter-name>requestFilter</filter-name>
+	    <filter-class>com.xianlei.base.filter.RequestFilter</filter-class>
+	  </filter>
+	 <filter-mapping>
+	    <filter-name>requestFilter</filter-name>
+	    <url-pattern>/*</url-pattern>
+ 	 </filter-mapping>
         
     <!-- Spring MVC servlet -->    
     <servlet>    

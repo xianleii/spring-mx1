@@ -1,0 +1,85 @@
+body{
+	background-color: #fff;
+}
+.footer.footer-fixed .footer-inner .footer-content {
+	background-color: #f2f2f2;
+	border: 1px solid #ddd;
+	bottom: 0;
+	left: 2px;
+	right: 2px;
+}
+
+.footer .footer-inner .footer-content {
+	line-height: 20px;
+}
+
+.form-inline .control-label {
+	margin-top: 5px
+}
+
+.col-xs-12 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+/**重新table部分样式*/
+.table {
+	margin-bottom: 0;
+}
+
+.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th
+	{
+	background-color: #dff0d8;
+}
+.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr.active:hover>th
+	{
+	background-color: #d0e9c6;
+}
+
+/**重写form表单样式 --start--*/
+.table input[type="text"],input[type="password"],input[type="datetime"],input[type="datetime-local"],input[type="date"],input[type="month"],input[type="time"],input[type="week"],input[type="number"],input[type="email"],input[type="url"],input[type="search"],input[type="tel"],input[type="color"]
+	{
+	padding: 0 4px;
+}
+.form-actions {
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 11px 20px 11px;
+}
+.table .help-block {
+	margin-top: 2px;
+	margin-bottom: 0px;
+}
+.table label {
+	margin-bottom: 0px;
+}
+.table tr {
+	background-color: #f9f9f9;
+}
+.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td
+	{
+	line-height: 25px;
+	padding: 4px;
+}
+/**重写form表单样式 --end--*/
+
+/**boo模态框--start--*/
+.modal-header {
+	padding: 8px 15px;
+}
+.modal-content{
+	/*border-radius:10px;*/
+}
+.modal-footer {
+  padding-bottom: 6px;
+  padding-top: 6px;
+}
+/**boo模态框--end--*/
+
+/**默认input select 宽度*/
+input[type='text'],select {width: 190px;}
+
+/**th,td 强制不换行*/
+.no-wrap {
+	word-break: keep-all;white-space:nowrap;
+}

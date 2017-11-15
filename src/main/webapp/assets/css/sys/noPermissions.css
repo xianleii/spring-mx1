@@ -1,0 +1,11 @@
+.page-content { margin: 30px; border: 1px solid #e5e5e5; padding: 0px; font-family: Microsoft Yahei !important; }
+.page-content .row {margin: 0px !important;padding: 0px;}
+.page-content *[class^="col-"]{padding-right: 0px;padding-left: 0px;}
+.page-content  .audit-content{margin: 60px;display: inline;float: left}
+.page-content  .audit-content img{float: left;padding-right: 50px;}
+.page-content  .audit-content .description{display: inline-block;float: left;    padding-right: 0px;padding-left: 0px;}
+.page-content  .audit-content .d-title{padding-top: 12px;padding-bottom: 12px;font-size: 20px;color: #333;line-height: 20px;}
+.page-content  .audit-content .d-english{font-size: 16px;color: #999;margin-bottom: 30px;}
+.page-content  .audit-content .btn{width: 100px;height: 36px;font-size: 14px;margin-right: 20px;}
+
+

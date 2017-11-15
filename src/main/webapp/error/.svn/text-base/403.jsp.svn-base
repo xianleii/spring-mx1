@@ -1,0 +1,53 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <title>${busiName} -403</title>
+	    <%@include file="/common/commonCSS.jsp" %>
+	    <%@include file="/common/commonJS.jsp" %>
+		<%@ include file="/WEB-INF/views/include/taglib.jsp"%>
+        <link rel="stylesheet" href="${resRoot}/css/sys/noPermissions.css">
+	</head>
+	<body class="no-skin">
+		<div class="main-container" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.check('main-container' , 'fixed')}catch(e){}
+			</script>
+			<div class="main-content">
+				<div class="main-content-inner">
+					<!-- #section:basics/content.breadcrumbs -->
+<!-- 					<div class="breadcrumbs" id="breadcrumbs"> -->
+<!-- 						<script type="text/javascript"> -->
+<!-- 						</script> -->
+<!-- 						<ul class="breadcrumb"> -->
+<!-- 							<li> -->
+<!-- 								<i class="ace-icon fa fa-folder-open-o"></i> -->
+<!-- 								<a href="#">控制面板</a> -->
+<!-- 							</li> -->
+<!-- 						</ul> -->
+<!-- 						/.breadcrumb -->
+<!-- 					</div> -->
+					<div class="page-content">
+                        <div class="row">
+                            <div class="col-xs-12">
+								<div class="audit-content">
+									<img src="${resRoot}/images/error-403.png">
+									<div class="col-xs-12 col-sm-8 description">
+											<div class="col-xs-12 d-title ">对不起，您没有该操作权限！</div>
+											<div class="col-xs-12 d-english ">Sorry, you don't have the permissions and couldn't do it!</div>
+											<div class="col-xs-12">
+												<a class="btn btn-info btn-white"  href="#">控制面板</a>
+												<a class="btn btn-light btn-white" href="javascript:history.go(-1);">返回</a>
+											</div>
+									</div>
+
+								</div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

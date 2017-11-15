@@ -1,0 +1,78 @@
+/*列表分页条css*/
+.zhph_pagination ul {
+	border-radius: 4px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+	display: inline-block;
+	margin-bottom: 0;
+	margin-left: 0;
+}
+
+.zhph_pagination ul>li:first-child>a,
+.zhph_pagination ul>li:first-child>span
+{
+	border-bottom-left-radius: 4px;
+	border-left-width: 1px;
+	border-top-left-radius: 4px;
+}
+
+.zhph_pagination ul>li {
+	display: inline;
+	list-style-type: none;
+}
+
+.zhph_pagination ul>li>a {
+	background-color: #fafafa;
+	border-color: #e0e8eb;
+	color: #2283c5;
+	margin: 0 -1px 0 0;
+}
+
+.zhph_pagination>li>a {
+	border-radius: 0 !important;
+	border-width: 1px;
+}
+
+.zhph_pagination ul>li>a,
+.zhph_pagination ul>li>span {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background-color: #fff;
+	border-color: #ddd;
+	border-image: none;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	float: left;
+	line-height: 20px;
+	padding: 4px 12px;
+	text-decoration: none;
+}
+
+.zhph_pagination{
+	float: right;padding-top: 0px;margin-top: 0px;
+}
+
+.zhph_pagination ul>li>input{
+	width:50px;text-align:center;float:left;line-height: 17px;
+}
+
+.zhph_pagination ul>li>select{
+	width:55px;float:left;
+}
+
+
+.zhph_pagination .mouse_allowed:hover{
+	background-color: #eaeff2;
+}
+
+.zhph_pagination .mouse_allowed {
+	cursor: pointer;
+}
+
+.zhph_pagination .mouse_not_allowed {
+	cursor: not-allowed;
+	color: gray;
+}
+
+
